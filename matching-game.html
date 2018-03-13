@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Matching Game</title>
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- <div class='all fa fa-check-square-o'></div> -->
+<div id="test">
+
+
+  <div id="wrapper">
+    <div class="container">
+
+      <header>
+        <h1>Matching Game</h1>
+      </header>
+      <div class='items'>
+        <div class='starts'>
+          <ul>
+            <li><i class="fa fa-star third" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star second" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star first" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+        <div class='moves'>
+          <span class='times'>0</span>
+          <span>moves</span>
+        </div>
+        <div class='clock'>
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+          <span>0</span>s
+        </div>
+        <div class='restart'>
+          <!-- <i class="fa fa-play"></i> -->
+          <!-- <i class="fa fa-retweet"></i> -->
+          <i class="fa fa-times"></i>
+        </div>
+        <div id='dotted' class='dotted-play'>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <main>
+        <ul class='deck'>
+          <li class='card'>
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-steam" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-github-alt" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-forumbee" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-angellist" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-github-alt" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-forumbee" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-angellist" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-android" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-steam" aria-hidden="true"></i>
+          </li>
+          <li class='card'>
+            <i class="fa fa-android" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </div>
+  <div id='music'>
+    <span class='music-icon'><i class="fa fa-music"></i></span>
+    <ul class='music-list slider'>
+      <button><i class="fa fa-angle-double-right"></i></button>
+      <li id='forest' class='theme'><i class="fa fa-pagelines"></i><span>Forest</span></li>
+      <li id='ocean' class='theme'><i class="fa fa-tint"></i><span>Ocean</span></li>
+      <li id='rainy' class='theme'><i class="fa fa-soundcloud"></i><span>Rainy</span></li>
+      <li id='peace' class='theme'><i class="fa fa-modx"></i><span>Peace</span></li>
+      <li id='cafe' class='theme'><i class="fa fa-coffee"></i><span>Café</span></li>
+    </ul>
+
+    <audio class='audio' loop autoplay='false' src=""></audio>
+  </div>
+  <div id="winner">
+    <div id="wrapper">
+      <span><i class="fa fa-grav"></i></span>
+      <h1 class='title'>Congratulation</h1>
+      <p>With<span class='final-moves'></span>moves in<span class='final-seconds'></span>seconds</p>
+      <div class="button-wrapper">
+        <div class='cover'></div>
+        <button type="button"><i class="fa fa-share"></i></button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+  <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js'></script>
+  <script src='matching-game-jquery.js'></script>
+  <!-- <script src='matching-game.js'></script> -->
+</body>
+
+</html>
